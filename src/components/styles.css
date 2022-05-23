@@ -1,0 +1,58 @@
+.input {
+    display: flex;
+    width: 90%;
+    position: relative;
+    align-items: center;
+
+}
+
+.userInput {
+    width: 100%;
+    border-radius: 50px;
+    padding: 20px 30px;
+    font-size: 25px;
+    border: none;
+    box-shadow: inset 0 0 5px black;
+}
+
+.submitBtn {
+    position: absolute;
+    width: 125px;
+    height: 50px;
+    margin: 12px;
+    border-radius: 50px;
+    right: 0;
+    border: none;
+    font-size: 20px;
+    background-color: lightgray;
+}
+
+.submitBtn:hover {
+    background-color: rgb(85, 255, 198);
+}
+
+#usersInfo {
+    margin-top: 20px;
+    width: 85%;
+    border-collapse: collapse;
+}
+
+#usersInfo td, #usersInfo th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#usersInfo tr:nth-child(even) {
+    background-color: white;
+}
+
+#usersInfo tr:hover {
+    background-color: rgb(246, 242, 129);
+}
+
+#usersInfo th {
+    padding: 12px 8px;
+    text-align: left;
+    background-color: rgb(85, 255, 198);
+    color: rgb(60, 60, 60);
+}

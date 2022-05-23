@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Github User Saver
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created using React with TypeScript and Firestore (Google's NoSQL database), to implement a Github "user saver" app. Using Github's API we can check if the Github username provided is valid. If valid, the data will be added onto a Firestore database. You will get a notification on whether the data was added to the database or not. The data will then be displayed on the front end. 
+
+## Basic Architecture
+
+The app is broken up into three parts. The InputField component will have a form with a search bar for the user to interact with, this is where the username will be collected. Username/setUsername along with a handleAdd function was passed in. The DataTable component will have the data from the Firestore displayed. It uses collection and getDocs to retrieve the data, only the data specified in model.ts will be displayed. The final part is the main App. This has the handleApp function, i had intended for the handleAdd to be inside of the Input component but decided to keep it here so that the function can deal with the notification along with adding data to the Firestore.
 
 ## Available Scripts
 
@@ -39,8 +43,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
